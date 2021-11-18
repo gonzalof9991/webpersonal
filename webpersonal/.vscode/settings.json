@@ -1,0 +1,8 @@
+{
+    "python.linting.pylintArgs": [
+
+        "--errors-only", // Que nos muestre los errores importantes
+        "--load-plugins", // Que cargue los plugins
+        "pylint_django" // Que cargue pylint_django
+    ]
+}

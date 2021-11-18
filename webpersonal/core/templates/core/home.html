@@ -1,0 +1,25 @@
+<!--Se extiende desde base html -->
+{% extends 'core/base.html '%}
+<!--Se extiende de title -->
+{% block title %} Home | Mi Web Personal {% endblock%}
+<!--Block de imagen -->
+{% block background %} {% load static %} {% static 'core/img/home-bg.jpg' %} {% endblock %}
+
+
+<!--Block de Headers-->
+{% block headers %}
+<!--Se ocupa de igual forma load static-->
+{% load static %}
+<h1>Juan Pérez</h1>
+<span class="subheading">Ingeniero Industrial</span> {% endblock %}
+
+
+<!-- De igual manera que en la base.html se ocupa el block content-->
+{% block content %}
+<section>
+    <article>
+        <h1>Mi biografia</h1>
+        <h3>Me llamo Gonzalo Rojas Falfan, tengo 21 años, estudio Ingenieria en Informatica</h3>
+    </article>
+</section>
+{% endblock%}
