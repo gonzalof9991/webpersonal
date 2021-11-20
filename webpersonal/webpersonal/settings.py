@@ -82,8 +82,12 @@ WSGI_APPLICATION = 'webpersonal.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ddj2j87t07pb0r',
+        'HOST': 'ec2-3-95-146-114.compute-1.amazonaws.com',
+        'USER': 'dyjfpgggajdfhv',
+        'PASSWORD': 'df4bf2b438dff8327fee49da04c896baa1080a256ee6bb28600a65e90db65c0b',
+        'PORT': '5432'
     }
 }
 
